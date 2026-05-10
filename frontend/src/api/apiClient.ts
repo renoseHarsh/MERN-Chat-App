@@ -1,7 +1,6 @@
 import { ApiClientParams, ApiResponse } from "./types";
 
-export const BASE_URL =
-  import.meta.env.MODE == "development" ? "http://0.0.0.0:5002/api" : "/api";
+export const BASE_URL = "http://localhost:5002/api";
 
 export const apiClient = async <T, R>({
   url,

@@ -19,21 +19,17 @@ Create a `.env` file in the `backend` of the project and add the following envir
 
 ```bash
 PORT=5002
-MONGODB_PASSWORD=your_mongo_password
 MONGODB_URI=your_mongo_uri
 JWT_SECRET=your_jwt_secret
 JWT_ACCESS_EXPIRY=1d
-NODE_ENV=production
 ```
 
 **Explanation:**
 
 - **`PORT`**: The port where the server will run.
-- **`MONGODB_PASSWORD`**: Your MongoDB password.
 - **`MONGODB_URI`**: The URI to your MongoDB database.
 - **`JWT_SECRET`**: Secret key used for signing JWT tokens.
 - **`JWT_ACCESS_EXPIRY`**: Expiration time for JWT tokens (default is `1d`).
-- **`NODE_ENV`**: Set this to `production` when running in production.
 
 ### 3. Install Dependencies
 

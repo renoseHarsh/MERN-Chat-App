@@ -6,21 +6,11 @@ import Conversation from "../models/conversation.model";
 const app = express();
 const httpServer = createServer(app);
 
-// const io = new Server(httpServer, {
-//   cors: {
-//     origin: "*",
-//   },
-// });
-let io: Server;
-if (process.env.NODE_ENV === "production") {
-  io = new Server(httpServer, {
-    cors: {
-      origin: "*",
-    },
-  });
-} else {
-  io = new Server(httpServer);
-}
+const io = new Server(httpServer, {
+  cors: {
+    origin: "*",
+  },
+});
 
 interface UserTimeout {
   id: string;
